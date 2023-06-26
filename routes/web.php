@@ -20,6 +20,7 @@ use App\Http\Controllers\Admin\ProjectController;
 Route::get('/', [PageController::class, 'index'])->name('home');
 
 
+
 Route::middleware(['auth','verified'])
     ->name('admin.')
     ->prefix('admin')
