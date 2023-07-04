@@ -29,6 +29,12 @@
                     <td>{{$project->description}}</td>
                     <td>
                         <span>{{$project->category->name}}</span>
+                        @foreach ($project->tags as $tag)
+                        <span>tags</span>
+
+                        @endforeach
+
+
                     </td>
                     <td>{{$project->creation_date}}</td>
                     <td>
