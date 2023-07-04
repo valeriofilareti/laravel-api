@@ -98,4 +98,10 @@ class ProjectController extends Controller
 
         return redirect()-> route('admin.projects.index');
     }
+
+    public function projectCategory(){
+        $categories = Category::all();
+        return view('admin.posts.category-posts',compact('categories'));
+    }
+
 }
